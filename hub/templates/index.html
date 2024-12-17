@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+</head>
+<body>
+<h1>User Management</h1>
+
+<!-- Add User Form -->
+<h2>Add User</h2>
+<form action="/add_user" method="post">
+    <input type="text" name="id" placeholder="User ID" required>
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <button type="submit">Add User</button>
+</form>
+
+<!-- Retrieve User Form -->
+<h2>Retrieve User</h2>
+<form action="/get_user" method="get">
+    <input type="text" name="id" placeholder="User ID" required>
+    <button type="submit">Get User</button>
+</form>
+
+<!-- Update User Form -->
+<h2>Update User</h2>
+<form action="/update_user/1" method="post"> <!-- Change the user ID as needed -->
+    <input type="text" name="name" placeholder="New Name">
+    <input type="email" name="email" placeholder="New Email">
+    <button type="submit">Update User</button>
+</form>
+
+<!-- Delete User Form -->
+<h2>Delete User</h2>
+<form action="/delete_user/1" method="post"> <!-- Change the user ID as needed -->
+    <button type="submit">Delete User</button>
+</form>
+
+</body>
+</html>
